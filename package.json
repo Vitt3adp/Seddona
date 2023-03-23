@@ -1,0 +1,53 @@
+{
+  "name": "seddona",
+  "description": "Седдона",
+  "devDependencies": {
+    "autoprefixer": "10.4.13",
+    "browser-sync": "2.28.3",
+    "editorconfig": "1.0.2",
+    "editorconfig-cli": "^0.3.0",
+    "gulp": "^4.0.2",
+    "gulp-less": "^5.0.0",
+    "gulp-plumber": "1.2.1",
+    "gulp-postcss": "9.0.1",
+    "gulp-sass": "5.1.0",
+    "gulp-sourcemaps": "3.0.0",
+    "postcss": "8.4.21",
+    "stylelint": "15.2.0"
+  },
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
+    "test": "npm run editorconfig && npm run stylelint",
+    "build": "gulp styles",
+    "start": "gulp"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "3": "^2.1.0",
+    "18": "^0.0.0",
+    "chokidar": "^3.5.3",
+    "resolve-url": "^0.2.1",
+    "source-map-resolve": "^0.6.0",
+    "source-map-url": "^0.4.1",
+    "urix": "^0.1.0"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "not dead",
+    "not ie <= 11"
+  ],
+  "editorconfig-cli": [
+    "*.json",
+    "*.js",
+    "source/*.html",
+    "source/js/**/*.js",
+    "source/img/**/*.svg",
+    "source/less/**/*.less"
+  ],
+  "engines": {
+    "node": "18.15.0"
+  }
+}
